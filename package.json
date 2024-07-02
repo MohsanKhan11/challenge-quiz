@@ -3,14 +3,19 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@testing-library/jest-dom": "^5.11.10",
+    "@testing-library/react": "^11.2.7",
+    "bootstrap": "^4.1.3",
     "react": "^16.8.6",
-    "react-dom": "^16.8.6",
-    "react-scripts": "3.0.1"
+    "react-dom": "^16.14.0",
+    "react-scripts": "3.0.1",
+    "react-stars": "^2.2.5",
+    "styled-components": "^6.1.11"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
+    "start": "react-scripts --openssl-legacy-provider start",
+    "build": "react-scripts --openssl-legacy-provider build",
+    "test": "node --max-old-space-size=4096 ./node_modules/react-scripts/scripts/test.js",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -29,6 +34,7 @@
     ]
   },
   "devDependencies": {
+    "mutationobserver-shim": "^0.3.7",
     "standard": "^12.0.1"
   }
 }
